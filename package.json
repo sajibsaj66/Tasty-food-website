@@ -1,0 +1,15 @@
+{
+  "name": "tasty-food-website",
+  "version": "1.0.0",
+  "description": "- Food website version 1",
+  "main": "index.js",
+  "scripts": {
+    "build-tail-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w",
+    "minify-tail-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w --minify"
+  },
+  "author": "Md. Rakib Hasan <md.rakibhasan3.1416@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

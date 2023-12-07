@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Stlyes */
+@layer base {
+    :root {
+        /* Header Height */
+        --header-height: 3rem;
+        /* Color Variable for Default Theme */
+        --container-color: #ffffff;
+        --body-color: #fbfefd;
+        --first-color: #069d54;
+        --first-alt-color: #048654;
+        --title-color: #383838;
+        --prime-color: #707070;
+        --prime-light-color: #a6a6a6;
+        --white-color: #ffffff;
+        --dark-color: #000000;
+    }
+}
+
+/* Components Syles */
+@layer components {
+    /* Reusable Classes */
+    .section {
+        @apply pt-[4rem] sm:pt-[pt-6rem] lg:pt-[7.5rem] pb-[2rem] sm:pb-[3.5rem] lg:pb-[4rem];
+    }
+    .section-title {
+        @apply fs-2xl font-bold text-title text-center mb-6 sm:mb-8;
+    }
+    .section-subtitle {
+        @apply block text-first font-medium text-center mb-2;
+    }
+    .description {
+        @apply fs-normal font-medium;
+    }
+    /* Btn styles */
+    .btn {
+        @apply inline-flex fs-normal font-medium px-5 py-3 rounded-lg trans-ease;
+    }
+    .btn-prime {
+        @apply text-white bg-first hover:bg-first-alt;
+    }
+}
+
+/* Dark Theme Color Variable */
+body.dark-theme {
+    --title-color: #F1F3F2;
+    --prime-color: #C7D1CC;
+    --body-color: #1D2521;
+    --container-color: #27302C;
+}
